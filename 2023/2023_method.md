@@ -2,14 +2,17 @@
 
 This document explains the model used to arrive at an estimated carbon footprint of running ImageEngine.
 
-The model is based on the “Sustainable Web Design” (SWD) model (https://sustainablewebdesign.org/calculating-digital-emissions/) and uses the recommended default values if the actual value is unknown.
+The model is based on the “Sustainable Web Design” ([SWD](https://sustainablewebdesign.org/calculating-digital-emissions/)) model and uses the recommended default values if the actual value is unknown.
 
-For some components the actual electricity use and data transfer is known, while others (the majority) the estimate is based on traffic served by ImageEngine (after optimization) during a representative period. From the SWD model, it is assumed that  0.81 kWh/GB is required.
+For some components the actual electricity use and data transfer is known, while for others (the majority) the estimate is based on traffic served by ImageEngine (after optimization) during a representative period. 
 
-The estimated yearly electricity consumption is ~ 720000 kWh.
+The estimate for 2023 is then based on historical data, but expected changes in traffic partners and known changes to the infrastructure are considered in the estimate.
+
+From the SWD model, it is assumed that  0.81 kWh/GB is required.
+
+The estimated yearly electricity consumption is then estimated to ~ 720000 kWh.
 
 When the carbon intensity is not known, the default 442 g/kWh is used. Data from AWS and other public data is used to define the carbon intensity of each data center location.
-
 
 | Data center | Traffic share	| carbon intensity (co2e/GB) | Relative carbon intensity | Comment |
 | --- | --- | --- | --- | --- | 
@@ -28,3 +31,5 @@ The carbon footprint is compensated by supporting VCS and Gold Standard verified
 
 * https://www.carbonfootprint.com/carbonoffsetprojects.html
 * https://treesforall.nl/en/projects/#current-project 
+
+Evidence of purchase can be found [here](https://github.com/imgeng/sustainability/blob/main/2023/certificate%20(1).pdf) and [here](https://github.com/imgeng/sustainability/blob/main/2023/voucher-6TNOIOPY-tpus-717709.pdf).
