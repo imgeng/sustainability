@@ -10,9 +10,10 @@ The estimated yearly electricity consumption is ~ 720000 kWh.
 
 When the carbon intensity is not known, the default 442 g/kWh is used. Data from AWS and other public data is used to define the carbon intensity of each data center location.
 
+
 | Data center | Traffic share	| carbon intensity (co2e/GB) | Relative carbon intensity | Comment |
-| --- | --- | --- | --- | --- | --- |
-| DC 1	| 44.19%	| 41.1 |	18.2 | >95% green|
+| --- | --- | --- | --- | --- | 
+| DC 1	| 44.19%	| 41.1 | 18.2 | >95% green|
 | DC 2	| 14.82%	| 41.1 | 6.1 | >95% green |
 | DC 3	| 13.81%	| 442 | 61.1 | |
 | DC 4	| 10.20%	| 41.1 | 4 .2 | >95% green |
