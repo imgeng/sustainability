@@ -14,7 +14,7 @@ The estimated yearly electricity consumption is then estimated to ~ 720000 kWh.
 
 When the carbon intensity is not known, the default 442 g/kWh is used. Data from AWS and other public data is used to define the carbon intensity of each data center location. Even for renewable energy, a carbon footprint of 20 g/Kwh is used.
 
-Across all data centres, relative to the traffic share and local carbon intensity, the carbon intensity per GB is 135.5 g/Kwh.
+Across all data centres, relative to the traffic share and local carbon intensity, the carbon intensity is 135.5 g/Kwh.
 
 720000 kWh x 135.5 g Co2e/kWh = ~ 98000000 g = 98 MT Co2e per year.
 
