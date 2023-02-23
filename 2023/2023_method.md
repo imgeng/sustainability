@@ -8,22 +8,13 @@ For some components the actual electricity use and data transfer is known, while
 
 The estimate for 2023 is then based on historical data, but expected changes in traffic partners and known changes to the infrastructure are considered in the estimate.
 
-From the SWD model, it is assumed that  0.81 kWh/GB is required.
+From the SWD model, it is assumed that  0.81 kWh/GB is required. This number is adjusted for ImageEngine's for the share of traffic where electricity consumption is known.
 
 The estimated yearly electricity consumption is then estimated to ~ 720000 kWh.
 
-When the carbon intensity is not known, the default 442 g/kWh is used. Data from AWS and other public data is used to define the carbon intensity of each data center location.
+When the carbon intensity is not known, the default 442 g/kWh is used. Data from AWS and other public data is used to define the carbon intensity of each data center location. Even for renewable energy, a carbon footprint of 20 g/Kwh is used.
 
-| Data center | Traffic share	| carbon intensity (co2e/GB) | Relative carbon intensity | Comment |
-| --- | --- | --- | --- | --- | 
-| DC 1	| 44.19%	| 41.1 | 18.2 | >95% green|
-| DC 2	| 14.82%	| 41.1 | 6.1 | >95% green |
-| DC 3	| 13.81%	| 442 | 61.1 | |
-| DC 4	| 10.20%	| 41.1 | 4 .2 | >95% green |
-| DC 5	| 7.29%	| 442 | 32.2 | |
-| DC 6	| 7.26%	| 41.1 | 3.0 | >95% green |
-| Other | 2.44% | 442 | 10.8 | |
-| Across all locations | | |135.5| |
+Across all data centres, relative to the traffic share and local carbon intensity, the carbon intensity per GB is 135.5 g/Kwh.
 
 720000 kWh x 135.5 g Co2e/kWh = ~ 98000000 g = 98 MT Co2e per year.
 
